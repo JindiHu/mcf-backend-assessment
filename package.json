@@ -1,0 +1,24 @@
+{
+  "name": "mcf-backend-assessment",
+  "version": "1.0.0",
+  "description": "A metasearch engine for flights company, Flights Ltd, was greatly impressed by the frontend Single Page Application you have done. But the backend service you used were mock endpoints, and can’t be deployed to production. Now the company has engaged you again to write a **high-quality production backend service**",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JindiHu/mcf-backend-assessment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JindiHu/mcf-backend-assessment/issues"
+  },
+  "homepage": "https://github.com/JindiHu/mcf-backend-assessment#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
