@@ -4,8 +4,8 @@
   "description": "A metasearch engine for flights company, Flights Ltd, was greatly impressed by the frontend Single Page Application you have done. But the backend service you used were mock endpoints, and can’t be deployed to production. Now the company has engaged you again to write a **high-quality production backend service**",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "type": "module",
   "repository": {
@@ -20,5 +20,9 @@
   "homepage": "https://github.com/JindiHu/mcf-backend-assessment#readme",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   }
 }
