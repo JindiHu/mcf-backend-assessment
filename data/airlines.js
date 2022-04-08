@@ -1,12 +1,12 @@
 const airlines = [
-	{
-		iata: "SQ",
-		name: "Singapore Airlines",
-	},
-	{
-		iata: "QF",
-		name: "Qantas",
-	},
+  {
+    iata: "SQ",
+    name: "Singapore Airlines",
+  },
+  {
+    iata: "QF",
+    name: "Qantas",
+  },
 ];
 
-export default airlines;
+module.exports = airlines;
