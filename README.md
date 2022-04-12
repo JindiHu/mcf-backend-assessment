@@ -3,14 +3,17 @@
 A metasearch engine for flights company, Flights Ltd, was greatly impressed by the frontend Single Page Application you have done. But the backend service you used were mock endpoints, and can’t be deployed to production. Now the company has engaged you again to write a **high-quality production backend service**
 
 ## Requirements
-You are required to create following RESTful API endpoints
+You are required to write following RESTful API endpoints.
 
 
 ### Get cities
 - Endpoint
-```http
+```
   GET /api/v1/cities
-  Example -> http://localhost:3001/api/cities
+```
+- Example
+```
+http://localhost:3001/api/v1/cities
 ```
 
 <details>
@@ -41,9 +44,12 @@ You are required to create following RESTful API endpoints
 
 ### Search for flights
 - Endpoint
-```http
+```
   GET /api/v1/flights
-  Example -> http://localhost:3001/api/flights?origin=SIN&destination=SYD&departure-date=2022-03-11&return-date=2022-03-16&page=0&page-size=10
+```
+- Example
+```
+  http://localhost:3001/api/v1/flights?origin=SIN&destination=SYD&departure-date=2022-03-11&return-date=2022-03-16&page=0&page-size=10
 ```
 | Query Params     | Type     | Required? | Description                                                                              | Default |
 | :--------------- | :------- |:----------| :--------------------------------------------------------------------------------------- | :------ |
@@ -235,5 +241,30 @@ You are required to create following RESTful API endpoints
 
 ## Feel free to 
 1. Make assumptions. Please state any hypotheses, resolution, and reasoning made.
-2. Use any language or framework that you are confident and comfortable with (Eg. Node js, Golang, python)
+2. Use any language or framework that you are confident and comfortable with (Eg. Node.js, Golang, python)
 
+
+## Sample for Node.js
+We are not restricting to any language or framework, but if you are going to use Node.js you can follow the steps below to setup your local environment
+1. Clone this repo
+```
+git clone https://github.com/JindiHu/mcf-backend-assessment.git
+```
+2. Install package
+```
+npm install
+```
+3. Start the node server
+```
+npm run start
+```
+4. Run test
+```
+npm run test
+```
+### Todo
+- There is a example of unit test for `GET /api/v1/cities` has been created by default, try to write the endpoint and fulfill the test case. 
+- Write ur own test case for `GET /api/v1/flights`, and the endpoint to fulfill the test case
+
+### Note
+The mock data has been given in `/data` directory
